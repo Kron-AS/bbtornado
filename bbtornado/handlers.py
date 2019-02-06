@@ -19,7 +19,7 @@ from six import with_metaclass
 log = logging.getLogger('bbtornado')
 
 
-def authenticated(error_code=403, error_message="Not Found"):
+def authenticated(error_code=401, error_message="Unauthorized"):
     """Decorate methods with this to require that the user be logged in.
     If the user is not logged in, error_code will be set and error_message returned
     """
